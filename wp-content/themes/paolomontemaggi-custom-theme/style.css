@@ -248,7 +248,7 @@ a {
 
 .clear {
   clear: both;
-  margin-bottom: 200px; }
+  margin-bottom: 6rem; }
 
 .blocco-blockarticlewide {
   position: relative; }
@@ -793,7 +793,7 @@ a {
   .first-p-bio {
     margin-top: 5rem; }
   .second-p-bio {
-    margin-top: 2rem; }
+    margin-top: 5rem; }
   .third-p-bio {
     display: none; }
   .blocco-video {
