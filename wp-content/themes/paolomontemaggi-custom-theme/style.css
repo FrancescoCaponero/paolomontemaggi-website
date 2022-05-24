@@ -795,7 +795,28 @@ a {
   .second-p-bio {
     margin-top: 2rem; }
   .third-p-bio {
-    display: none; } }
+    display: none; }
+  .blocco-video {
+    background: white;
+    background: linear-gradient(180deg, white 0%, #e0f6f2 19%, #e0f6f2 79%, rgba(255, 255, 255, 0) 100%);
+    animation: opacity 3s ease-in; }
+  .header-title {
+    font-size: 20px; }
+  .title-inner-hero-video {
+    font-size: 16px;
+    top: 90%; }
+  .title-inner-hero-video::before {
+    position: absolute;
+    transform: translateX(15%);
+    content: "";
+    width: 10rem;
+    height: 1px;
+    background-color: #ADBEBA;
+    animation: slideInFromLeftMobile 2.5s ease-in-out; }
+  .blocco-video iframe {
+    min-height: 62vh;
+    left: 55%;
+    animation: widthHeighttoSmall 3s ease-in; } }
 
 @media only screen and (max-width: 400px) {
   .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
