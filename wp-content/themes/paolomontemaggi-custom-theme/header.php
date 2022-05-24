@@ -49,7 +49,6 @@
 					</div>
 				</header><!-- #masthead -->
 				<div class="page-spacer">
-					
 				</div>
 				<div class="svg-circle-line">
 				<svg xmlns="http://www.w3.org/2000/svg" class="parallax--translateY" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="120" viewBox="0 0 48 299">
