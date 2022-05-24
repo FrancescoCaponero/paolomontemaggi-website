@@ -1,0 +1,165 @@
+
+@media only screen and (max-width: 600px){
+
+    .blocco-dove-trovarmi .lazy-block-h1-about{
+        font-size: 28px;
+    }
+
+    //footer
+
+    .footer-wrapper{
+
+        .footerwrap-first{
+            width: 90%;
+
+            ul{
+                margin-top: 0px;
+                gap: none;
+                justify-content: space-between;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    flex-direction: row;
+                }
+            }
+            
+            .icons{
+                width: 40%;
+            }
+            
+
+            .footer-h1-name{
+                font-size: 20px;
+            }
+            
+            .footer-h2-number, .footer-h2-email{
+                font-size: 14px;
+            }
+        }
+
+        .footerwrap-second{
+            width: 90%;
+
+                
+            &-h2{
+                font-size: 20px;
+            }
+
+
+            &-content{
+                font-size: 14px;
+            }
+        }
+    }
+
+    //end of footer
+
+    .blocco-mapblock{
+        background: linear-gradient(#97C4C1, #D4E7E5, #97C4C1);
+    }
+
+    .mapblock-content-wrapper{
+        flex-direction: column;
+    }
+
+    .mapblock-content-h2{
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .mapblock-h1-title{
+        font-size: 32px;  
+    }
+    
+    .mapblock-h1-huge-title{
+        font-size: 110px;  
+        top: 35%;
+    }
+
+    .header-title{
+        font-size: 20px;
+    }
+    
+    .block-experience-line{
+        width: 5rem;
+        height: 0.2rem;
+        background-color: #83B9B5;
+        opacity: 0.8;
+    }
+
+    .lazy-block-h1-number{
+        font-size: 19px;
+        font-weight: 400;
+    }
+    .lazy-block-h1-number-text{
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .blocco-experiencenumberpanel{
+        display: block;
+    }
+
+    .lazy-block-number-experience-first{
+    transform: translate(0px, -150px);
+    opacity: 0;
+    margin: 4rem 0;
+    padding: 1rem;
+    align-items: flex-start;
+    }
+
+    .lazy-block-number-experience-second{
+    transform: translate(0px, -150px);
+    opacity: 0;
+    margin: 4rem 0;
+    padding: 1rem;
+    align-items: flex-end;
+    }
+
+    .lazy-block-number-experience-third{
+    transform: translate(0px, -150px);
+    opacity: 0;
+    margin: 4rem 0;
+    padding: 1rem;
+    align-items: flex-start;
+    }
+
+    .lazy-block-p-wrapper{
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .lazy-block-h1-titlebio{
+        opacity: 0;
+        font-weight: 400;
+        font-size: 24px;
+        margin-left: 1rem;
+    }
+    .lazy-block-h1-huge-title-bio{
+        position: absolute;
+        font-weight: 100;
+        font-size: 80px;
+        opacity: 0;
+        right: -40%;
+        top: 3%;
+    }
+    .blocco-biopanel{
+        color: #87BBB7;
+        padding: 1rem;
+        position: relative;
+    }
+    .first-p-bio{
+        margin-top: 5rem;
+    }
+    .second-p-bio{
+        margin-top: 2rem;
+    }
+    
+    .third-p-bio{
+        display: none;
+    }
+
+}

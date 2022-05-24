@@ -1,0 +1,57 @@
+
+.blocco-mapblock{
+    position: relative;
+    padding: 10% 5%;
+    background: linear-gradient(#97C4C1, #D4E7E5);
+    color: white;
+}
+
+.mapblock-h1-title{
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.mapblock-h1-huge-title{
+    z-index: 0;
+    opacity: 0.1;
+    color: #83B9B5;
+    line-break: none;
+    font-weight: 300;
+    font-size: 200px;
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    line-height: 0;
+}
+
+.mapblock-content-wrapper{
+    padding: 10% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapblock-content-h2{
+    font-weight: 400;
+    font-size: 22px;
+
+}
+
+.map-block-google{
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.blocco-dove-trovarmi .lazy-block-h1-about{
+    display: inline-block;
+    z-index: 2;
+    font-weight: 300;
+    transform: translate(15%, 50%);
+    color: white;
+    font-size: 55px;
+    position: absolute;
+}
+
+.mapblock-h1-title{
+    display: none;
+}

@@ -1,0 +1,26 @@
+
+/* owl nav */
+
+.owl-dots{
+    @include centeredxy;
+}
+
+.owl-dots button.owl-dot.active {
+    background: #A9D1CE;
+    opacity: 1;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-250%);
+    opacity: 0.5;
+    margin: 0 1%;
+    background: white;
+    color: inherit;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+}

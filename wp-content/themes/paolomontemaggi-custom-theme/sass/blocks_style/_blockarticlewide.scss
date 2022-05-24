@@ -1,0 +1,47 @@
+
+.blocco-blockarticlewide{
+    position: relative;
+}
+
+.blockarticlewide-side-container{
+    width: 45%;
+    height: 600px;
+    max-height: 50%;
+}
+.block-article-title-style{
+    z-index: 1;
+    mix-blend-mode: color-dodge;
+    color: #A9D1CE;
+    font-size: 3em;
+    width: 100%;
+    left: 14%;
+    margin-top: 1%;
+    right: 10%;
+    font-weight: 200;  
+    letter-spacing: 0.5rem;
+    position: absolute;
+}
+
+.article-img-p-container{
+    position: relative;
+    height: 100%;
+}
+
+.img-article-container-style{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.png-article-style{
+    width: 100%;
+}
+
+.block-article-content-style{
+    line-height: 2rem;
+    position: relative;
+    letter-spacing: 0.25em;
+    font-weight: 200;
+}
+

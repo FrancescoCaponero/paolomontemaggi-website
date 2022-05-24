@@ -1,0 +1,41 @@
+
+@media only screen and (max-width: 400px) {
+
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        transform: translateY(-200%);
+        height: 5px;
+        width: 5px;
+    }
+
+   .blocco-dove-trovarmi .lazy-block-h1-about{
+        font-size: 26px;
+    }
+
+    .blocco-video{
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(224,246,242,1) 19%, rgba(224,246,242,1) 79%, rgba(255,255,255,0) 100%);
+        animation: opacity 3s ease-in;
+        
+    }
+    .header-title{
+        font-size: 20px;
+    }
+    .title-inner-hero-video{
+        font-size: 16px;
+        top: 90%
+    }
+    .title-inner-hero-video::before{
+        position: absolute;
+        transform: translateX(15%);
+        content: "";
+        width: 10rem;
+        height: 1px;
+        background-color: #ADBEBA;
+        animation: slideInFromLeftMobile 2.5s ease-in-out;
+    }
+    .blocco-video iframe{
+        min-height: 62vh;
+        left: 55%;
+        animation: widthHeighttoSmall 3s ease-in;
+    }
+}

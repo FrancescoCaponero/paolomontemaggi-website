@@ -1,0 +1,9 @@
+
+.svg-circle-line{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-30%);
+    opacity: 0;
+    animation: slideInFromTop-circle 2s forwards ease-in-out;
+    animation-delay: 2s;
+}
