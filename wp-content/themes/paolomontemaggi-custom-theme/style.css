@@ -193,8 +193,6 @@ a {
       animation: widthHeighttoSmall 3s ease-in; } }
 
 .block-experience-line {
-  width: 10rem;
-  height: 0.5rem;
   background-color: #83B9B5;
   opacity: 0.8; }
   @media (max-width: 599px) {
@@ -203,24 +201,45 @@ a {
       height: 0.2rem;
       background-color: #83B9B5;
       opacity: 0.8; } }
+  @media (min-width: 600px) {
+    .block-experience-line {
+      width: 7rem;
+      height: 0.25rem;
+      background-color: #83B9B5;
+      opacity: 0.8; } }
+  @media (min-width: 1200px) {
+    .block-experience-line {
+      width: 10rem;
+      height: 0.3rem;
+      background-color: #83B9B5;
+      opacity: 0.8; } }
 
 .lazy-block-h1-number {
-  font-size: 60px;
   font-weight: 400;
   color: #83B9B5; }
   @media (max-width: 599px) {
     .lazy-block-h1-number {
-      font-size: 20px;
-      font-weight: 400; } }
+      font-size: 20px; } }
+  @media (min-width: 600px) {
+    .lazy-block-h1-number {
+      font-size: 27px; } }
+  @media (min-width: 900px) {
+    .lazy-block-h1-number {
+      font-size: 35px; } }
 
 .lazy-block-h1-number-text {
-  font-size: 35px;
   font-weight: 400;
   color: #83B9B5; }
   @media (max-width: 599px) {
     .lazy-block-h1-number-text {
       font-size: 20px;
       font-weight: 400; } }
+  @media (min-width: 600px) {
+    .lazy-block-h1-number-text {
+      font-size: 27px; } }
+  @media (min-width: 900px) {
+    .lazy-block-h1-number-text {
+      font-size: 35px; } }
 
 .blocco-experiencenumberpanel {
   margin: 10rem 0;

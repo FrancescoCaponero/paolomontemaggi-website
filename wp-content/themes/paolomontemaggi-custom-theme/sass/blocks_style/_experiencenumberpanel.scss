@@ -1,7 +1,6 @@
 
 .block-experience-line{
-    width: 10rem;
-    height: 0.5rem;
+    
     background-color: #83B9B5;
     opacity: 0.8;
 
@@ -11,9 +10,40 @@
         background-color: #83B9B5;
         opacity: 0.8;
     }
+
+    @include for-tablet-portrait-up{
+        width: 7rem;
+        height: 0.25rem;
+        background-color: #83B9B5;
+        opacity: 0.8;
+    }
+
+    @include for-desktop-up{
+        width: 10rem;
+        height: 0.3rem;
+        background-color: #83B9B5;
+        opacity: 0.8;
+    }
 }
 .lazy-block-h1-number{
-    font-size: 60px;
+    font-weight: 400;
+    color: #83B9B5;
+
+    @include for-phone-only{
+        font-size: 20px;
+        
+    }
+
+    @include for-tablet-portrait-up{
+        font-size: 27px;
+        
+    }
+
+    @include for-tablet-landscape-up{
+        font-size: 35px; 
+    }
+}
+.lazy-block-h1-number-text{
     font-weight: 400;
     color: #83B9B5;
 
@@ -21,15 +51,13 @@
         font-size: 20px;
         font-weight: 400;
     }
-}
-.lazy-block-h1-number-text{
-    font-size: 35px;
-    font-weight: 400;
-    color: #83B9B5;
 
-    @include for-phone-only{
-        font-size: 20px;
-        font-weight: 400;
+    @include for-tablet-portrait-up{
+        font-size: 27px;
+        
+    }
+    @include for-tablet-landscape-up{
+        font-size: 35px; 
     }
 }
 
