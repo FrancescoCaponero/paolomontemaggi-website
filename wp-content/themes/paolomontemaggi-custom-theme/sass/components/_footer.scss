@@ -68,8 +68,23 @@
 .copyright-footer-bar{
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     font-weight: 400;
-    font-size: 16px;
     color: #B7D6D4;
     margin-bottom: 1rem;
+
+    @include for-phone-only {
+        font-size: 12px;
+        padding: 0 1rem;
+    }
+
+    @include for-tablet-portrait-up {
+        font-size: 14px;
+        padding: 0 1rem;
+    }
+
+    @include for-tablet-landscape-up {
+        font-size: 16px;
+    }
 }
