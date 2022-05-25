@@ -1,3 +1,13 @@
+.lazy-block-p-wrapper{
+    display: flex;
+    justify-content: space-around;
+
+    @include for-phone-only{
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
 
 .lazy-block-h1-about{
     display: none;
@@ -7,18 +17,27 @@
     color: #5faaa4;
     padding: 5rem;
     position: relative;
+
+    @include for-phone-only{
+        color: #87BBB7;
+        padding: 1rem;
+        position: relative;
+    }
 }
 
-.lazy-block-p-wrapper{
-    display: flex;
-    justify-content: space-around;
-}
 
 .lazy-block-h1-titlebio{
     opacity: 0;
     transform: translate(-150px, 0px);
     font-weight: 100;
     font-size: 86px;
+
+    @include for-phone-only{
+        opacity: 0;
+        font-weight: 400;
+        font-size: 24px;
+        margin-left: 1rem;
+    }
 }
 
 .lazy-block-h1-huge-title-bio{
@@ -29,19 +48,40 @@
     font-size: 250px;
     opacity: 0;
     top: 10%;
+
+    @include for-phone-only{
+        position: absolute;
+        font-weight: 100;
+        font-size: 80px;
+        opacity: 0;
+        right: -40%;
+        top: 3%;
+    }
 }
 .first-p-bio{
     transform: translate(0px,0px);
     margin-top: 33rem;
+
+    @include for-phone-only{
+        margin-top: 5rem;
+    }
 }
 .second-p-bio{
     transform: translate(0px,0px);
     margin-top: 18rem;
+
+    @include for-phone-only{
+        margin-top: 5rem;
+    }
 }
 
 .third-p-bio{
     transform: translate(0px,0px);
     margin-top: 2rem;
+
+    @include for-phone-only{
+        display: none;
+    }
 }
 
 .clear {

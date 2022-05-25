@@ -1,4 +1,6 @@
 
+
+
 .blocco-blockarticlewide{
     position: relative;
 }
@@ -8,6 +10,7 @@
     width: 45%;
     height: 600px;
     max-height: 50%;
+    
 }
 .block-article-title-style{
     z-index: 1;
@@ -46,3 +49,79 @@
     font-weight: 200;
 }
 
+.wp-block-lazyblock-blockarticlewide{
+    @include for-phone-only{
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    /* media block Interventi */
+
+       
+    .wp-block-lazyblock-blockarticlewide{
+        height: 600px;
+    }
+
+    .blockarticlewide-side-container{
+        width: 100%;
+        margin-left: 0;
+        float: none;
+    }
+
+    .png-article-style{
+        opacity: 0.14;
+        min-width: 547px;
+        transform: translateX(-50px);
+        opacity: 0.14;
+    }
+
+    .block-article-title-style{
+        font-size: 32px;
+        font-weight: 300;
+        text-align: center;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+    }
+
+    .article-position-left .block-article-content-style{
+        left: 50%;
+        width: 65%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 27px;
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 0.05;
+        line-height: 1rem;
+    }
+
+    .article-position-right .block-article-content-style{
+        line-height: 1rem;
+        letter-spacing: 0.05;
+        left: 50%;
+        width: 65%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 27px;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .img-article-container-style{
+        padding: 0
+    }
+
+    .square-style{
+        width: 80%;
+    }
+
+    .vertical-rect-style{
+        width: 75%;
+    }
+
+    
+} 

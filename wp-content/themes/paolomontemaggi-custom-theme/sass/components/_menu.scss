@@ -1,0 +1,58 @@
+@media only screen and (max-width: 1200px) {
+    
+  .menu li a {
+        background-image: linear-gradient( to right, #636363, #636363 50%, #fff 50% ) !important;
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu li a:before {
+        content: '';
+        background: #636363 !important;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        transition: all 0.3s ease-in-out;
+      }
+    .menu li a {
+        font-size: 30px;
+    }
+    .main-navigation{
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .menu-menu-1-container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .menu{
+        transition: all 0.5s ease-in-out;
+        background-color: #9abeb6;
+        position: fixed;
+        left:-100%;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        opacity: 0;
+    }
+
+    .menu-menu-1-container ul li {
+        letter-spacing: 0em;
+    }
+}

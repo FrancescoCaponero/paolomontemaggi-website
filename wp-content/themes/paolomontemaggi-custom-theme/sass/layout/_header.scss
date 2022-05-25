@@ -12,11 +12,15 @@
 }
 
 .header-wrap{
-    padding: 0rem 2rem;
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    padding: 0rem 2rem;
+
+    @include for-desktop-up{
+        padding: 1rem 1.5rem;
+    }
 }
 
 .site-header{

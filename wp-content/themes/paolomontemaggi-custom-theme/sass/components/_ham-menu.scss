@@ -1,5 +1,84 @@
 .toggle-menu{
+  @include for-phone-only{
+    padding: 35px;
+    cursor: pointer;
+    @include centeredxy;
+  }
+  @include for-tablet-portrait-up{
+    padding: 35px;
+    cursor: pointer;
+    @include centeredxy;
+  }
+  @include for-desktop-up{
     display: none;
+  }
+
+  
+}
+
+.close-menu-right{
+
+  @include for-phone-only{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    fill: white;
+    transition: all 0.3s ease-in-out;
+  }
+  @include for-tablet-portrait-up{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    fill: white;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.ham-menu-right{
+  @include for-phone-only{
+    cursor: pointer;
+    position: absolute;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  @include for-tablet-portrait-up{
+    cursor: pointer;
+    position: absolute;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+
+.menu-mobile-active .close-menu-right{
+  @include for-phone-only{
+    opacity: 1;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    z-index: 1;
+  }
+  @include for-tablet-portrait-up{
+    opacity: 1;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    z-index: 1;
+  }
+  
+}
+
+.menu-mobile-active .ham-menu-right{
+  @include for-phone-only{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+  }
+  @include for-tablet-portrait-up{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+  }
 }
 
 .menu-mobile-active .menu{

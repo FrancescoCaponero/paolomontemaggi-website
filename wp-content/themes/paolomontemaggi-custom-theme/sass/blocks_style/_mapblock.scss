@@ -4,11 +4,28 @@
     padding: 10% 5%;
     background: linear-gradient(#97C4C1, #D4E7E5);
     color: white;
+
+    @include for-phone-only{
+        background: linear-gradient(#97C4C1, #D4E7E5, #97C4C1);
+    }
+}
+
+.mapblock-h1-huge-title{
+    @include for-phone-only{
+        font-size: 110px;  
+        top: 35%;
+    }
+  
 }
 
 .mapblock-h1-title{
     font-size: 55px;
     font-weight: 300;
+    display: none;
+
+    @include for-phone-only{
+        font-size: 32px;  
+    }
 }
 
 .mapblock-h1-huge-title{
@@ -29,11 +46,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include for-phone-only{
+        flex-direction: column;
+    }
 }
 
 .mapblock-content-h2{
     font-weight: 400;
     font-size: 22px;
+
+    @include for-phone-only{
+        font-weight: 300;
+        font-size: 18px;
+    }
 
 }
 
@@ -64,6 +90,3 @@
     }
 }
 
-.mapblock-h1-title{
-    display: none;
-}
