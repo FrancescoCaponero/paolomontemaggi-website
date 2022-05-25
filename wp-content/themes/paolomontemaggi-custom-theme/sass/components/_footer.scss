@@ -1,54 +1,134 @@
 
 .footer-wrapper{
-    padding: 3rem 0rem 8rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-
-    .footerwrap-first{
-        width: 30%;
-
-        ul{
-            margin-top: 2rem;
-            display: flex;
-            justify-content: flex-start;
-            gap: 3rem;
-            align-items: center;
-            list-style: none;
-            text-decoration: none;
-        }
-
-        .icons {
-            margin-top: 2rem;
-            width: 50%;
-            height: 50%;
-        }
-
-            
-        .footer-h2-number, .footer-h2-email {
-            color: #B2B2B2;
-            font-size: 16px;
-            font-weight: 300;
-        }
-
-            
-        .footer-h2-number, .footer-h2-email, .footer-h1-name{
-            margin-top: 2rem;
-        }
-        
-        .footer-h1-name{
-            font-size: 30px;
-            font-weight: 400;
-            color: #636363;
-            letter-spacing: 0.04em;
-        }
-     
+    @include centeredxy;
+    @include for-phone-only {
+        padding: 3rem 1rem 8rem 1rem;
+        gap: 4rem;
+        flex-direction: column;
     }
+    @include for-tablet-portrait-up {
+        padding: 3rem 1rem 8rem 1rem;
+        gap: 4rem;
+        flex-direction: column;
+    }
+    @include for-tablet-landscape-up {
+        gap: 8rem;
+        padding: 3rem 0rem 8rem 0rem;
+        flex-direction: inherit;
+    }
+
+        .footerwrap-first{
+            width: 30%;
+
+            @include for-phone-only{
+                width: 90%
+            }
+            @include for-tablet-portrait-up{
+                width: 80%;
+            }
+            @include for-tablet-landscape-up{
+                 width: 30%;
+            }
+           
+
+            ul{
+                margin-top: 2rem;
+                display: flex;
+                align-items: center;
+                list-style: none;
+                text-decoration: none;
+
+                @include for-phone-only {
+                    margin-top: 0px;
+                    justify-content: space-between;
+                }
+
+                @include for-tablet-portrait-up {
+                    justify-content: space-between;
+                }
+
+                @include for-tablet-landscape-up {
+                    justify-content: flex-start;
+                    gap: 3rem;
+                }
+                
+
+                li{
+                    @include for-phone-only {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: nowrap;
+                        flex-direction: row;
+                    }
+
+                    a{
+                        @include centeredxy;
+                    }
+                }
+            }
+
+            .icons {
+                margin-top: 2rem;
+                height: 50%;
+
+                @include for-phone-only {
+                    width: 40%;
+                }
+
+                @include for-tablet-portrait-up {
+                    width: 20%;
+                }
+
+                @include for-tablet-landscape-up {
+                    width: 50%;
+                }
+               
+            }
+
+                
+            .footer-h2-number, .footer-h2-email {
+                color: #B2B2B2;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+                
+            .footer-h2-number, .footer-h2-email, .footer-h1-name{
+                margin-top: 2rem;
+
+                @include for-phone-only{
+                    font-size: 14px;
+                }
+            }
+            
+            .footer-h1-name{
+                font-size: 30px;
+                font-weight: 400;
+                color: #636363;
+                letter-spacing: 0.04em;
+
+                @include for-phone-only {
+                    font-size: 20px;
+                }
+            }
+        
+}
     
     .footerwrap-second{
         color: #B2B2B2;
         width: 30%;
+
+        @include for-phone-only {
+            width: 90%;
+        }
+        @include for-tablet-portrait-up{
+            width: 80%;
+        }
+        @include for-tablet-landscape-up{
+            width: 30%;
+        }
+
 
         &-content{
             line-break: none;
@@ -56,10 +136,18 @@
             font-weight: 200;
             color: #B2B2B2;
             margin-top: 2rem;
+
+            @include for-phone-only{
+                font-size: 14px;
+            }
         }
         
         &-h2{
             color: #83B9B5;
+
+            @include for-phone-only {
+                font-size: 20px;
+            }
         }
     }
 }

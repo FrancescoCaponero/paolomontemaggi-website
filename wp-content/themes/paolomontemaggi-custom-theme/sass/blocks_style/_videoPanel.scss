@@ -8,7 +8,11 @@
     left: 10%;
     animation: slideInFromLeft 1.5s ease-in-out;
     color: #636363;
-    
+
+    @include for-phone-only {
+        font-size: 16px;
+        top: 90%
+    }
 }
 
 .title-inner-hero-video::before{
@@ -19,6 +23,16 @@
     height: 1px;
     background-color: #ADBEBA;
     animation: slideInFromLeft 2.5s ease-in-out;
+
+    @include for-phone-only {
+        position: absolute;
+        transform: translateX(15%);
+        content: "";
+        width: 10rem;
+        height: 1px;
+        background-color: #ADBEBA;
+        animation: slideInFromLeftMobile 2.5s ease-in-out;
+    }
 }
 
 .blocco-video{
@@ -33,6 +47,14 @@
     opacity: 0.7;
     animation: opacity 3s ease-in;
     z-index: -1;
+
+    @include for-phone-only {
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(224,246,242,1) 19%, rgba(224,246,242,1) 79%, rgba(255,255,255,0) 100%);
+        animation: opacity 3s ease-in;
+    }
+
+
 }
 
 .blocco-video iframe{
@@ -46,5 +68,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     animation: widthHeighttoSmall 3s ease-in;
+
+    @include for-phone-only {
+        min-height: 62vh;
+        left: 55%;
+        animation: widthHeighttoSmall 3s ease-in;
+    }
 
 }

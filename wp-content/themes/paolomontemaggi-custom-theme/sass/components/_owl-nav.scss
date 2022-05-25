@@ -23,4 +23,10 @@
     border: none;
     padding: 0!important;
     font: inherit;
+
+    @include for-phone-only {
+        transform: translateY(-200%);
+        height: 5px;
+        width: 5px;
+    }
 }

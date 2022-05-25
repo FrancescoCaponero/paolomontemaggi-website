@@ -2,70 +2,8 @@
 
 @media only screen and (max-width: 1000px) {
 
-    // dove trovarmi block
+ 
 
-    .blocco-dove-trovarmi .lazy-block-h1-about{
-        font-size: 42px;
-    }
-
-    //footer
-
-    
-    .footer-wrapper{
-        padding: 3rem 1rem 8rem 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 4rem;
-        flex-direction: column;
-
-            
-            .footerwrap-first{
-                width: 80%;
-
-                ul{
-                    justify-content: space-between;
-                    gap: none;
-            
-                }
-
-                .icons {
-                    width: 25%;
-                }
-            }
-            
-            .footerwrap-second{
-                width: 80%;
-            }
-
-        }
-
-    // end of footer
-    
-    .wp-block-lazyblock-blockarticlewide{
-        height: 600px;
-    }
-
-    .svg-circle-line{
-        display: none;
-    }
-
-    .a-selected{
-        transition: all 1s ease-in-out;
-        padding: 5rem 0;
-        background-color: #9abeb6;
-        position: fixed;
-        left:-100%;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        opacity: 0;
-    }
 
     /* menu-mobile-active media */
 
@@ -160,6 +98,11 @@
 
     
     /* media block Interventi */
+
+       
+    .wp-block-lazyblock-blockarticlewide{
+        height: 600px;
+    }
 
     .blockarticlewide-side-container{
         width: 100%;

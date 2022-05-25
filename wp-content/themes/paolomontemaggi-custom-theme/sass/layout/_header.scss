@@ -5,6 +5,10 @@
     font-weight: 300;
     color : #636363;
     animation: slideInFromTop 1s ease-in-out;
+
+    @include for-phone-only {
+        font-size: 20px;
+    }
 }
 
 .header-wrap{
