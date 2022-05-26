@@ -196,11 +196,11 @@ jQuery(document).ready(function ($) {
 			
 			tlBioContent
 			.from(".first-p-bio", {opacity: 0, x: -200})
-			.from(".second-p-bio", {opacity: 0, x: -100})
+			.from(".second-p-bio", {opacity: 0, xPercent: 100})
 			.from(".third-p-bio", {opacity: 0, x: -70})
 			.addLabel("finish")
 			.to(".first-p-bio", {opacity: 1, x: 0})
-			.to(".second-p-bio", {opacity: 1, x: 0})
+			.to(".second-p-bio", {opacity: 1, xPercent: 0})
 			.to(".third-p-bio", {opacity: 1, x: 0})
 			
 		},
