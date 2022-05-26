@@ -7,21 +7,18 @@
     @include for-phone-only{
         width: 5rem;
         height: 0.2rem;
-        background-color: #83B9B5;
         opacity: 0.8;
     }
 
     @include for-tablet-portrait-up{
-        width: 7rem;
-        height: 0.25rem;
-        background-color: #83B9B5;
+        width: 5.5rem;
+        height: 0.22rem;
         opacity: 0.8;
     }
 
     @include for-desktop-up{
         width: 10rem;
         height: 0.3rem;
-        background-color: #83B9B5;
         opacity: 0.8;
     }
 }
@@ -35,12 +32,11 @@
     }
 
     @include for-tablet-portrait-up{
-        font-size: 27px;
-        
+        font-size: 23px;
     }
 
     @include for-tablet-landscape-up{
-        font-size: 35px; 
+        font-size: 30px; 
     }
 }
 .lazy-block-h1-number-text{
@@ -53,16 +49,21 @@
     }
 
     @include for-tablet-portrait-up{
-        font-size: 27px;
-        
+        font-size: 23px;
+        width: 70%;
     }
     @include for-tablet-landscape-up{
-        font-size: 35px; 
+        font-size: 30px; 
+        width: 80%;
+    }
+    @include for-desktop-up{
+        font-size: 30px; 
+        width: 100%;
     }
 }
 
 .blocco-experiencenumberpanel{
-    margin: 10rem 0;
+    margin: 8rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -87,6 +88,12 @@
         padding: 1rem;
         align-items: flex-start;
     }
+    
+    @include for-tablet-landscape-up{
+        transform: translate(0px, -150px);
+        opacity: 0;
+        align-items: center;
+    }
 }
 
 .lazy-block-number-experience-second{
@@ -103,6 +110,12 @@
         padding: 1rem;
         align-items: flex-end;
     }
+  
+    @include for-tablet-landscape-up{
+        transform: translate(0px, -150px);
+        opacity: 0;
+        align-items: center;
+    }
 }
 
 .lazy-block-number-experience-third{
@@ -118,5 +131,11 @@
         margin: 4rem 0;
         padding: 1rem;
         align-items: flex-start;
+    }
+   
+    @include for-tablet-landscape-up{
+        transform: translate(0px, -150px);
+        opacity: 0;
+        align-items: center;
     }
 }

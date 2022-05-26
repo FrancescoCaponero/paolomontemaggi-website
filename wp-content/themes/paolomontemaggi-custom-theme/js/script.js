@@ -86,6 +86,7 @@ jQuery(document).ready(function ($) {
 	let bioPanelHugeTitleHeight = $('.lazy-block-h1-huge-title-bio').height();
 	let bioBlockPwrapper = $('.lazy-block-p-wrapper').height();
 	let interventiBlockPwrapper = $('.blocco-blockarticlewide').height();
+	let thirdBioHeightFix = $('.third-p-bio').height();
 
 	// numeri about tl
 
@@ -146,6 +147,7 @@ jQuery(document).ready(function ($) {
 
 	// animating first content titles
 
+		
 	gsap.to('.lazy-block-h1-titlebio' , {
 		scrollTrigger: {
 			trigger: '.blocco-biopanel' ,
@@ -179,9 +181,9 @@ jQuery(document).ready(function ($) {
 			// media desktop
 			let tlBioContent = gsap.timeline({
 				scrollTrigger: {
-					trigger: '.lazy-block-p-wrapper' ,
+					trigger: '.lazy-block-p-wrapper',
 					start: "top center",
-					end: () => "+=" + bioBlockPwrapper,
+					end: () => "+=" + (bioBlockPwrapper),
 					scrub: true ,
 					snap: {
 						snapTo: "labels", 
@@ -193,11 +195,11 @@ jQuery(document).ready(function ($) {
 			});
 			
 			tlBioContent
-			.from(".third-p-bio", {opacity: 0, x: -150})
-			.from(".second-p-bio", {opacity: 0, x: -150})
-			.from(".first-p-bio", {opacity: 0, x: -150})
+			.from(".first-p-bio", {opacity: 0, x: -200})
+			.from(".second-p-bio", {opacity: 0, x: -100})
+			.from(".third-p-bio", {opacity: 0, x: -70})
 			.addLabel("finish")
-			.to(".third-p-bio", {opacity: 1, x: 0})
+			.to(".first-p-bio", {opacity: 1, x: 0})
 			.to(".second-p-bio", {opacity: 1, x: 0})
 			.to(".third-p-bio", {opacity: 1, x: 0})
 			
@@ -220,17 +222,23 @@ jQuery(document).ready(function ($) {
 					}
 				}
 			});
+
+
 			
 			tlBioContent
 			.from(".first-p-bio", {opacity: 0, x: -50})
 			.from(".lazy-block-h1-huge-title-bio-second", {opacity: 0, x: 50})
-			.from(".second-p-bio", {opacity: 0, x: -50})
+			.from(".second-p-bio", {opacity: 0, xPercent: -50})
+			.from(".third-p-bio", {opacity: 0, x: -50})
 			.addLabel('mid')
 			.to(".third-p-bio", {opacity: 1, x: 0})
 			.to(".lazy-block-h1-huge-title-bio-second", {opacity: 0.2, x: 0})
-			.to(".second-p-bio", {opacity: 1, x: 0})
+			.to(".second-p-bio", {opacity: 1, xPercent: 0})
+			.to(".third-p-bio", {opacity: 1, x: 0})
 		}
 	}); //fine animation query p
+
+	
 
 	// media query animation Interventi paragraphs
 
@@ -321,7 +329,7 @@ jQuery(document).ready(function ($) {
 			interval: 0.7,
 			batchMax: 5,
 			onEnter: batch => gsap.to(batch, {
-				opacity: 0.14,
+				opacity: 0.04,
 				stagger: 0.1
 			}),
 		});
