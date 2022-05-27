@@ -177,7 +177,7 @@ jQuery(document).ready(function ($) {
 	// media query animation bio paragraphs
 
 	ScrollTrigger.matchMedia({
-		"(min-width: 600px)" : function() {
+		"(min-width: 900px)" : function() {
 			// media desktop
 			let tlBioContent = gsap.timeline({
 				scrollTrigger: {
@@ -193,20 +193,23 @@ jQuery(document).ready(function ($) {
 					}
 				}
 			});
-			
+						
+
+
 			tlBioContent
 			.from(".first-p-bio", {opacity: 0, x: -200})
-			.from(".second-p-bio", {opacity: 0, xPercent: 100})
+			.from(".second-p-bio", {opacity: 0, xPercent: 40})
 			.from(".third-p-bio", {opacity: 0, x: -70})
 			.addLabel("finish")
 			.to(".first-p-bio", {opacity: 1, x: 0})
-			.to(".second-p-bio", {opacity: 1, xPercent: -50})
+			.to(".second-p-bio", {opacity: 1})
 			.to(".third-p-bio", {opacity: 1, x: 0})
+			
 			
 		},
 
 		 //media mobile
-		"(max-width: 599px)" : function() {
+		"(max-width: 899px)" : function() {
 			// biocontent
 			let tlBioContent = gsap.timeline({
 				scrollTrigger: {

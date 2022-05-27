@@ -59,13 +59,14 @@
     transform: translate(-150px, 0px);
     font-weight: 100;
     font-size: 86px;
+    margin-left: 1rem;
+
 
     @include for-phone-only{
-        opacity: 0;
         font-weight: 400;
         font-size: 24px;
-        margin-left: 1rem;
     }
+    
 }
 
 .lazy-block-h1-huge-title-bio{
@@ -116,7 +117,6 @@
     }
 }
 .second-p-bio{
-    transform: translate(0,0);
     display: block;
     
     
@@ -133,11 +133,11 @@
     
     @include for-tablet-landscape-up{
         position: absolute;
-
+        width: 53%;
         padding: inherit;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         
 
     }
@@ -176,7 +176,7 @@
     margin-bottom: 5rem;
 
     @include for-phone-only{
-        margin-bottom: 3rem;
+        margin-bottom: 0rem;
     }
     @include for-tablet-portrait-up{
         margin-bottom: 2rem;

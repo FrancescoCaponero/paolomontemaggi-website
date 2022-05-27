@@ -22,7 +22,7 @@
 
     @include for-phone-only{
         left: 1rem;
-        margin-top: 3rem;
+        margin-top: 5rem;
         text-align: left;
         width: 80%;
         font-size: 32px;
@@ -32,7 +32,7 @@
 
     @include for-tablet-portrait-up{
         left: 1rem;
-        margin-top: 3rem;
+        margin-top: 4rem;
         text-align: left;
         width: 80%;
         font-size: 32px;
@@ -42,7 +42,7 @@
 
     @include for-tablet-landscape-up{
         left: 14%;
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
 }
 
