@@ -200,7 +200,7 @@ jQuery(document).ready(function ($) {
 			.from(".third-p-bio", {opacity: 0, x: -70})
 			.addLabel("finish")
 			.to(".first-p-bio", {opacity: 1, x: 0})
-			.to(".second-p-bio", {opacity: 1, xPercent: 0})
+			.to(".second-p-bio", {opacity: 1, xPercent: -50})
 			.to(".third-p-bio", {opacity: 1, x: 0})
 			
 		},
