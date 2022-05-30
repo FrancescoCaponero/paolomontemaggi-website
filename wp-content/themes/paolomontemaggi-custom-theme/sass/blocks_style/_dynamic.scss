@@ -1,10 +1,14 @@
 
 .green-article-color{
-    background-color: #A9D1CE;
+    background-color: $green-article-color;
 }
 
 .grey-article-color{
-    background-color: #C8C8C8;
+    background-color: $grey-article-color;
+}
+
+.white-article-color{
+    background-color: $white-article-color;
 }
 
 .article-position-left{
@@ -57,5 +61,13 @@
 }
 
 .vertical-rect-style{
-    width: 35%;
+    @include for-phone-only{
+        width: 35%;
+    }
+    @include for-tablet-portrait-up{
+        width: 35%;
+    }
+    @include for-desktop-up{
+        width: 35%;
+    }
 }

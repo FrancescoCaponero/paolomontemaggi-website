@@ -10,13 +10,7 @@
     }
 }
 
-.mapblock-h1-huge-title{
-    @include for-phone-only{
-        font-size: 110px;  
-        top: 35%;
-    }
-  
-}
+
 
 .mapblock-h1-title{
     font-size: 55px;
@@ -31,14 +25,17 @@
 .mapblock-h1-huge-title{
     z-index: 0;
     opacity: 0.1;
-    color: #83B9B5;
+    color: #d0ecea;
     line-break: none;
     font-weight: 300;
-    font-size: 200px;
+    font-size: 220px;
     position: absolute;
     white-space: nowrap;
-    top: 50%;
+    top: 18%;
     line-height: 0;
+    @include for-phone-only{
+        font-size: 110px;  
+    }
 }
 
 .mapblock-content-wrapper{
@@ -79,14 +76,20 @@
 
     @include for-phone-only {
         font-size: 30px;
+        margin-top: 3rem;
+
     }
 
     @include for-tablet-portrait-up {
         font-size: 40px;
+        margin-top: 4rem;
+
     }
 
     @include for-desktop-up {
         font-size: 55px;
+        margin-top: 5rem;
+
     }
 }
 

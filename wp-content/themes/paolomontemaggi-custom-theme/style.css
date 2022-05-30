@@ -462,6 +462,9 @@ a {
 .grey-article-color {
   background-color: #C8C8C8; }
 
+.white-article-color {
+  background-color: #ffffff00; }
+
 .article-position-left {
   margin-left: 5%;
   float: left; }
@@ -502,8 +505,17 @@ a {
   width: 40%;
   width: 40%; }
 
-.vertical-rect-style {
-  width: 35%; }
+@media (max-width: 599px) {
+  .vertical-rect-style {
+    width: 35%; } }
+
+@media (min-width: 600px) {
+  .vertical-rect-style {
+    width: 35%; } }
+
+@media (min-width: 1200px) {
+  .vertical-rect-style {
+    width: 35%; } }
 
 .blocco-blockarticlewide {
   position: relative; }
@@ -542,7 +554,8 @@ a {
   @media (min-width: 900px) {
     .block-article-title-style {
       left: 14%;
-      margin-top: 5rem; } }
+      margin-top: 5rem;
+      text-align: center; } }
 
 .article-img-p-container {
   position: relative;
@@ -615,11 +628,6 @@ a {
     .blocco-mapblock {
       background: linear-gradient(#97C4C1, #D4E7E5, #97C4C1); } }
 
-@media (max-width: 599px) {
-  .mapblock-h1-huge-title {
-    font-size: 110px;
-    top: 35%; } }
-
 .mapblock-h1-title {
   font-size: 55px;
   font-weight: 300;
@@ -631,14 +639,17 @@ a {
 .mapblock-h1-huge-title {
   z-index: 0;
   opacity: 0.1;
-  color: #83B9B5;
+  color: #d0ecea;
   line-break: none;
   font-weight: 300;
-  font-size: 200px;
+  font-size: 220px;
   position: absolute;
   white-space: nowrap;
-  top: 50%;
+  top: 18%;
   line-height: 0; }
+  @media (max-width: 599px) {
+    .mapblock-h1-huge-title {
+      font-size: 110px; } }
 
 .mapblock-content-wrapper {
   padding: 10% 0%;
@@ -671,13 +682,16 @@ a {
   position: absolute; }
   @media (max-width: 599px) {
     .blocco-dove-trovarmi .lazy-block-h1-about {
-      font-size: 30px; } }
+      font-size: 30px;
+      margin-top: 3rem; } }
   @media (min-width: 600px) {
     .blocco-dove-trovarmi .lazy-block-h1-about {
-      font-size: 40px; } }
+      font-size: 40px;
+      margin-top: 4rem; } }
   @media (min-width: 1200px) {
     .blocco-dove-trovarmi .lazy-block-h1-about {
-      font-size: 55px; } }
+      font-size: 55px;
+      margin-top: 5rem; } }
 
 .main-navigation {
   font-weight: 300; }
@@ -726,7 +740,7 @@ a {
   font: inherit; }
   @media (max-width: 599px) {
     .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-      transform: translateY(-200%);
+      transform: translateY(-300%);
       height: 5px;
       width: 5px; } }
 
