@@ -12,11 +12,11 @@
 
 @keyframes slideInFromLeftMobile {
     0% {
-      transform: translateX(80%);
+      transform: translateX(150%);
       opacity: 0;
     }
     100% {
-      transform: translateX(15%);
+      transform: translateX(40%);
       opacity: 1;
     }
   }

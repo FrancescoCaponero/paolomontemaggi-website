@@ -7,12 +7,6 @@ function mapblock_render( $output, $attributes ) { ?>
 	<?php ob_start(); ?>
 	
 		<div class="blocco blocco-mapblock <?= sanitize_title($attributes['map-block-title'])?>">
-			<h1 class="mapblock-h1-title">
-				<?= $attributes['map-block-title']?>
-			</h1>
-            <h1 class="mapblock-h1-huge-title">
-				<?= $attributes['map-block-title']?>
-			</h1>
             <div class="mapblock-content-wrapper">
                 <div class="map-block-google">
                 </div>

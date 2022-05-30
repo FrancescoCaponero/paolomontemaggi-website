@@ -7,31 +7,31 @@ function experiencenumberpanel_render( $output, $attributes ) { ?>
 	<?php ob_start(); ?>
 		<div class="blocco blocco-experiencenumberpanel">
             <div class="lazy-block-number-experience-first">
-                <h1 class="lazy-block-h1-number counter" data-max= "<?= $attributes['first-number']?>" >
+                <h3 class="lazy-block-h3-number counter" data-max= "<?= $attributes['first-number']?>" >
                     <?= $attributes['first-number']?>
-                </h1>
+                </h3>
                 <div class="block-experience-line"></div>
-                <h1 class="lazy-block-h1-number-text">
+                <h3 class="lazy-block-h3-number-text">
                     <?= $attributes['first-number-text']?>
-                </h1>
+                </h3>
             </div>
             <div class="lazy-block-number-experience-second">
-                <h1 class="lazy-block-h1-number counter" data-max= "<?= $attributes['second-number']?>">
+                <h3 class="lazy-block-h3-number counter" data-max= "<?= $attributes['second-number']?>">
                     <?= $attributes['second-number']?>
-                </h1>
+                </h3>
                 <div class="block-experience-line"></div>
-                <h1 class="lazy-block-h1-number-text">
+                <h3 class="lazy-block-h3-number-text">
                     <?= $attributes['second-number-text']?>
-                </h1>
+                </h3>
             </div>
             <div class="lazy-block-number-experience-third">
-                <h1 class="lazy-block-h1-number counter" data-max= "<?= $attributes['third-number']?>">
+                <h3 class="lazy-block-h3-number counter" data-max= "<?= $attributes['third-number']?>">
                     <?= $attributes['third-number']?>
-                </h1>
+                </h3>
                 <div class="block-experience-line"></div>
-                <h1 class="lazy-block-h1-number-text">
+                <h3 class="lazy-block-h3-number-text">
                     <?= $attributes['third-number-text']?>
-                </h1>
+                </h3>
             </div>
 		</div>
 	<?php return ob_get_clean();

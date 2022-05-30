@@ -82,8 +82,8 @@ jQuery(document).ready(function ($) {
 	gsap.registerPlugin(ScrollTrigger);
 
 	let heightExperience = $('.blocco-experiencenumberpanel').height();
-	let bioPanelHeight = $('.lazy-block-h1-titlebio').height();
-	let bioPanelHugeTitleHeight = $('.lazy-block-h1-huge-title-bio').height();
+	let bioPanelHeight = $('.lazy-block-h2-titlebio').height();
+	let bioPanelHugeTitleHeight = $('.lazy-block-h3-huge-title-bio').height();
 	let bioBlockPwrapper = $('.lazy-block-p-wrapper').height();
 	let interventiBlockPwrapper = $('.blocco-blockarticlewide').height();
 	let thirdBioHeightFix = $('.third-p-bio').height();
@@ -148,7 +148,7 @@ jQuery(document).ready(function ($) {
 	// animating first content titles
 
 		
-	gsap.to('.lazy-block-h1-titlebio' , {
+	gsap.to('.lazy-block-h2-titlebio' , {
 		scrollTrigger: {
 			trigger: '.blocco-biopanel' ,
 			start: "top center",
@@ -161,9 +161,9 @@ jQuery(document).ready(function ($) {
 		duration: 1
 	}); 
 
-	gsap.to('.lazy-block-h1-huge-title-bio' , {
+	gsap.to('.lazy-block-h3-huge-title-bio' , {
 		scrollTrigger: {
-			trigger: '.lazy-block-h1-huge-title-bio' ,
+			trigger: '.lazy-block-h3-huge-title-bio' ,
 			start: "top center",
 			end: () => "+=" + (bioPanelHugeTitleHeight / 3),
 			scrub: true ,
@@ -230,12 +230,10 @@ jQuery(document).ready(function ($) {
 			
 			tlBioContent
 			.from(".first-p-bio", {opacity: 0, x: -50})
-			.from(".lazy-block-h1-huge-title-bio-second", {opacity: 0, x: 50})
 			.from(".second-p-bio", {opacity: 0, xPercent: -50})
 			.from(".third-p-bio", {opacity: 0, x: -50})
 			.addLabel('mid')
 			.to(".third-p-bio", {opacity: 1, x: 0})
-			.to(".lazy-block-h1-huge-title-bio-second", {opacity: 0.2, x: 0})
 			.to(".second-p-bio", {opacity: 1, xPercent: 0})
 			.to(".third-p-bio", {opacity: 1, x: 0})
 		}

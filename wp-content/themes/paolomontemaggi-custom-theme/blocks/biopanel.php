@@ -6,12 +6,12 @@ function biopanel_render( $output, $attributes ) { ?>
 
 	<?php ob_start(); ?>
 		<div class="blocco blocco-biopanel">
-			<h1 class="lazy-block-h1-titlebio">
+			<h2 class="lazy-block-h2-titlebio">
 				<?= $attributes['title-bio']?>
-			</h1>
-			<h1 class="lazy-block-h1-huge-title-bio">
+			</h2>
+			<h3 class="lazy-block-h3-huge-title-bio">
 				<?= $attributes['huge-title-background']?>
-			</h1>
+			</h3>
            
             <div class="lazy-block-p-wrapper">
                 <p class="first-p-bio">

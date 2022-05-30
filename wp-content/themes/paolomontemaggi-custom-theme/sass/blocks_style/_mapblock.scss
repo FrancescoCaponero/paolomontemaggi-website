@@ -2,41 +2,19 @@
 .blocco-mapblock{
     position: relative;
     padding: 10% 5%;
-    background: linear-gradient(#97C4C1, #D4E7E5);
+    background: linear-gradient(#ffffff, #D4E7E5);
     color: white;
+    height: 100vh;
+    margin-top: 5rem;
 
     @include for-phone-only{
-        background: linear-gradient(#97C4C1, #D4E7E5, #97C4C1);
+        background: linear-gradient(#ffffff, #D4E7E5, #97C4C1);
+        height: 85vh;
+        margin-top: 0rem;
     }
 }
 
 
-
-.mapblock-h1-title{
-    font-size: 55px;
-    font-weight: 300;
-    display: none;
-
-    @include for-phone-only{
-        font-size: 32px;  
-    }
-}
-
-.mapblock-h1-huge-title{
-    z-index: 0;
-    opacity: 0.1;
-    color: #d0ecea;
-    line-break: none;
-    font-weight: 300;
-    font-size: 220px;
-    position: absolute;
-    white-space: nowrap;
-    top: 18%;
-    line-height: 0;
-    @include for-phone-only{
-        font-size: 110px;  
-    }
-}
 
 .mapblock-content-wrapper{
     padding: 10% 0%;
@@ -52,6 +30,7 @@
 .mapblock-content-h2{
     font-weight: 400;
     font-size: 22px;
+    color: #5faaa4;
 
     @include for-phone-only{
         font-weight: 300;
@@ -65,31 +44,59 @@
     min-height: 200px;
 }
 
-.blocco-dove-trovarmi .lazy-block-h1-about{
-    display: inline-block;
-    z-index: 2;
-    font-weight: 300;
-    transform: translate(15%, 50%);
-    color: white;
-    font-size: 42px;
-    position: absolute;
+.blocco-dove-trovarmi  {
+    margin-top: 5rem;
+    position: relative;
 
-    @include for-phone-only {
-        font-size: 30px;
-        margin-top: 3rem;
-
+    .lazy-block-h2-about{
+        display: inline-block;
+        z-index: 3;
+        font-weight: 300;
+        transform: translate(15%, 50%);
+        color: #97C4C1;
+        font-size: 42px;
+        position: absolute;
+    
+        @include for-phone-only {
+            font-size: 30px;
+            margin-top: 3rem;
+    
+        }
+    
+        @include for-tablet-portrait-up {
+            font-size: 40px;
+            margin-top: 4rem;
+    
+        }
+    
+        @include for-desktop-up {
+            font-size: 55px;
+            margin-top: 5rem;
+    
+        }
+        
     }
 
-    @include for-tablet-portrait-up {
-        font-size: 40px;
-        margin-top: 4rem;
-
+        
+    .lazy-block-h3-huge-about{
+        z-index: 2;
+        opacity: 0.2;
+        display: inline-block;
+        top: 18%;
+        left: 10%;
+        color: #97c4c1;
+        line-break: none;
+        font-weight: 300;
+        font-size: 220px;
+        position: absolute;
+        white-space: nowrap;
+        line-height: 0;
+        @include for-phone-only{
+            font-size: 110px;  
+        }
     }
+        
+} 
 
-    @include for-desktop-up {
-        font-size: 55px;
-        margin-top: 5rem;
 
-    }
-}
 

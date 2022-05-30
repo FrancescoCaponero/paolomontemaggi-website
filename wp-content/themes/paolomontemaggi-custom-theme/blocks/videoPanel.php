@@ -9,7 +9,7 @@ function videopanel_render( $output, $attributes ) { ?>
               <iframe src="https://player.vimeo.com/video/699425286?h=def5cb59d3&amp;autoplay=1&amp;controls=0&amp;loop=1&amp;background=1&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""  title="Paolo Montemaggi">
               </iframe>
             <div>
-                <?= $attributes['title-inner-video']?>
+                <h1 class="title-inner-hero-video"><?= $attributes['title-inner-video']?></h1>
             </div>        
             <script src="https://player.vimeo.com/api/player.js"></script>
     

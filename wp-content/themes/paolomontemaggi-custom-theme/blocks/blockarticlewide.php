@@ -7,7 +7,7 @@ function blockarticlewide_render( $output, $attributes ) { ?>
     
 		<div class="blocco blocco-blockarticlewide <?php if(isset($attributes['image-size-sel']['value'])){echo 'overflow-hidden';}else{echo '';} ?>">
             <div class="blockarticlewide-side-container <?= $attributes['color-picker-selection']['value']?> <?= $attributes['container-position']['value']?>">
-                <h1 class="block-article-title-style"><?= $attributes['block-article-title']?></h1>
+                <h3 class="block-article-title-style"><?= $attributes['block-article-title']?></h3>
                 <div class="article-img-p-container">
                     <div class="img-article-container-style <?= $attributes['image-size-sel']['value']?>">
                         <img class="png-article-style" src="<?= $attributes['png-article-image']['url']?>">

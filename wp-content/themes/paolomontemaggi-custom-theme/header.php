@@ -25,7 +25,7 @@
 			<div id="page" class="site">
 				<header id="masthead" class="site-header main-column">
 					<div class="header-wrap">
-							<h1 class="header-title"><?= get_the_title(); ?></h1>
+							<h2 class="header-title"><?= get_the_title(); ?></h2>
 						<nav id="site-navigation" class="main-navigation">
 							<?php
 								wp_nav_menu(

@@ -22,24 +22,25 @@
         opacity: 0.8;
     }
 }
-.lazy-block-h1-number{
+.lazy-block-h3-number{
     font-weight: 400;
     color: #83B9B5;
+    line-height: 1.8;
 
     @include for-phone-only{
-        font-size: 20px;
+        font-size: 30px;
         
     }
 
     @include for-tablet-portrait-up{
-        font-size: 23px;
+        font-size: 35px;
     }
 
     @include for-tablet-landscape-up{
-        font-size: 30px; 
+        font-size: 40px; 
     }
 }
-.lazy-block-h1-number-text{
+.lazy-block-h3-number-text{
     font-weight: 400;
     color: #83B9B5;
 

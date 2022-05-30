@@ -19,7 +19,11 @@ a{
     text-decoration: none;
 }
 
-
 .overflow-hidden{
     overflow: hidden;
+}
+
+.lazy-block-h2-about, 
+.lazy-block-h3-huge-about{
+    display: none;
 }

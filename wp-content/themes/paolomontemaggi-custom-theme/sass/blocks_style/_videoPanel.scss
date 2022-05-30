@@ -1,39 +1,39 @@
 
 .title-inner-hero-video{
     position: absolute;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
-    top: 50%;
-    transform: calc(-50%, -50%);
+    top: 45%;
     left: 10%;
     animation: slideInFromLeft 1.5s ease-in-out;
-    color: #636363;
+    color: #484848;
 
     @include for-phone-only {
-        font-size: 16px;
+        font-size: 20px;
         top: 90%
     }
-}
 
-.title-inner-hero-video::before{
-    position: absolute;
-    transform: translateX(25%);
-    content: "";
-    width: 20rem;
-    height: 1px;
-    background-color: #ADBEBA;
-    animation: slideInFromLeft 2.5s ease-in-out;
-
-    @include for-phone-only {
+    &::before{
         position: absolute;
-        transform: translateX(15%);
+        transform: translateX(25%);
         content: "";
-        width: 10rem;
+        width: 20rem;
         height: 1px;
         background-color: #ADBEBA;
-        animation: slideInFromLeftMobile 2.5s ease-in-out;
+        animation: slideInFromLeft 2.5s ease-in-out;
+    
+        @include for-phone-only {
+            position: absolute;
+            transform: translateX(40%);
+            content: "";
+            width: 10rem;
+            height: 1px;
+            animation: slideInFromLeftMobile 2.5s ease-in-out;
+        }
     }
 }
+
+
 
 .blocco-video{
     position: absolute;
@@ -54,25 +54,24 @@
         animation: opacity 3s ease-in;
     }
 
-
-}
-
-.blocco-video iframe{
-    opacity: 0.7;
-    width: 100vw;
-    height: 56.25vw;
-    min-height: 100vh;
-    min-width: 177.77vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: widthHeighttoSmall 3s ease-in;
-
-    @include for-phone-only {
-        min-height: 62vh;
-        left: 55%;
-        animation: widthHeighttoSmall 3s ease-in;
+    & iframe{
+        opacity: 0.7;
+        width: 100vw;
+        height: 56.25vw;
+        min-height: 100vh;
+        min-width: 177.77vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: widthHeighttoSmall 1.2s ease-in;
+    
+        @include for-phone-only {
+            min-height: 62vh;
+            left: 55%;
+            animation: widthHeighttoSmall 1.2s ease-in;
+        }
+    
     }
-
 }
+

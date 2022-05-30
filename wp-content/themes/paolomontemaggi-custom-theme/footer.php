@@ -15,7 +15,7 @@
 		<footer>
 			<div class="footer-wrapper">
 				<div class="footerwrap-first">
-					<h1 class="footer-h1-name">PAOLO MONTEMAGGI</h1>
+					<h2 class="footer-h2-name">PAOLO MONTEMAGGI</h2>
 					<h2 class="footer-h2-number">+39 77777777</h2>
 					<h2 class="footer-h2-email">paolomontemaggi@mail.it</h2>
 					<div class="social-bar-wrap">
